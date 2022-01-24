@@ -1,4 +1,8 @@
 @charset "utf-8";
+
+body{
+    min-width: 1200px;
+}
 .top_wrapper{
     background-color: #0044af;
 }
@@ -70,22 +74,22 @@ ul.top{
 }
 
 .top2_wrapper{
-    background-color: wheat;
+    _background-color: wheat;
     width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    height: 125px;}
 
 .menu_wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
+    _background-color: blue;
 }
 .menu_wrapper .menu1 ul{
-    /* height: 80px;  */
+    height: 80px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,3 +100,69 @@ ul.top{
 }
 .menu2{}
 
+header{
+    height: 162px;
+}
+
+
+
+/* section */
+
+
+.section{
+    height: 1500px;
+    /* 임시높이값 */
+    background-color: cadetblue;
+    background-image: url(../images/dot.png),url(../images/background_full.jpg);
+    background-repeat: repeat,no-repeat;
+    background-position: center;
+    background-size: auto,cover;
+
+    padding: 85px;
+}
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    _background-color: violet;
+}
+
+.title>h3{
+    font-size: 52px;
+    font-weight: 200;
+}
+.title>h2{
+    font-size: 72px;
+}
+
+.container ul.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: tomato;
+
+}
+.container ul.icon li{
+    background-color: turquoise;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    _background-size: ;
+}
+.container ul.icon li img{ 
+}
+
+
+
+
+/* content */
