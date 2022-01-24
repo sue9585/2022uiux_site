@@ -1,9 +1,8 @@
 @charset "utf-8";
 .top_wrapper{
-    background-color: tomato;
+    background-color: #0044af;
 }
 .top_wrapper .width_1200{
-    _background-color: turquoise;
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -14,51 +13,86 @@
     height: 40px;
 }
 .top_wrapper .width_1200 ul.top li{
-    background-color: pink;
+    background-color: #00163b;
     margin-right: 4px;
 }
-.top_wrapper .width_1200 ul.top li a{
+ul.top li a{
     display: block;
-    line-height: 40px;
+    height: 100%;
     text-align: center;
+    line-height: 40px;
     padding: 0 20px;
+   color: whitesmoke;
 }
-ul.top li a:hover, a.active{
-    background-color: red;
-    color: white;
-}
- 
 
-.top{
-    _background-color: violet;
+.top_wrapper .width_1200 ul.top li a:hover, .top_wrapper .width_1200 ul.top li a.active{
+    background-color: white;
+    color: black;
+}
+
+ul.top{
     display: flex;
 }
 
 .util_wrapper{
-    background-color: yellow;
 }
 
 .util_wrapper .util{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 13px;
+    font-weight: 600;
 }
-.util_wrapper .util li{}
+.util_wrapper .util li{
+
+}
 
 .util_wrapper .util li a{
     display: block;
     line-height: 40px;
-    padding: 0 5px;
+    padding: 0 10px;
+    color: white;
 }
 
-.util li:nth-child(2){
-   
-    _background-color: white;
-    _display: flex;
-    _justify-content: space-between;
-}
 .util li:nth-child(2) div{
     float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 13px;
+    font-weight: 800;
     background-color: #fff;
+    color: black;
     text-align: center;
 }
+.util li:nth-child(2) div:nth-child(1){
+    margin-right: 3px;
+}
+
+.top2_wrapper{
+    background-color: wheat;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+}
+.menu_wrapper .menu1 ul{
+    /* height: 80px;  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_wrapper .menu1 ul li{
+    padding: 0 26px;
+}
+.menu2{}
+
