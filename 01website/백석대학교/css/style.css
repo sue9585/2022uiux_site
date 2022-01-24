@@ -35,6 +35,11 @@
     color: #6a6a6a;
 }
 
+.top li a:hover, .top li a.active{
+    background: white; color:violet;
+}
+
+
 
 /* 오른쪽 유틸 */
 .util{
