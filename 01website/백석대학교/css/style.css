@@ -1,128 +1,43 @@
 @charset "utf-8";
-
-/* 왼쪽 상단메뉴 */
 .top_wrapper{
-    background-color: #0044af ;
+    background-color: tomato;
+}
+.top_wrapper .width_1200{
+    background-color: turquoise;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.width_1500{ 
-    width: 1500px;
-    margin: 0 auto;
-    _background-color: blueviolet;
+.top_wrapper .width_1200 ul{
+    height: 40px;
 }
+.top_wrapper .width_1200 ul.top li{
+    background-color: pink;
+    margin-right: 4px;
+}
+.top_wrapper .width_1200 ul.top li a{
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 20px;
+}
+.top_wrapper .width_1200 ul.top li a:hover, a.active{
+    background-color: red;
+    color: seagreen;
+}
+ 
 
 .top{
-    float: left;
-    _background-color: #ccc;
+    background-color: violet;
+    display: flex;
 }
 
-.top li{
-    float: left;
+.util_wrapper{
+    background-color: yellow;
 }
 
-.top li a{
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    font-size: 15px;
-    padding: 5px 60px;
-    background-color: #00163b;
-    color: white;
-}
-
-.top li a:hover{
-    background-color: #fff;
-    color: #6a6a6a;
-}
-
-.top li a:hover, .top li a.active{
-    background: white; color:violet;
-}
-
-
-
-/* 오른쪽 유틸 */
-.util{
-    float: right;
-}
-
-.util li{
-    float: left;
-}
-
-
-.util li a{
-    display: block;
-    color: white;
-    padding: 18px 10px;
-    text-align: center;
-    
-}
-
-/* .util div{
-    padding-top: 5px;
-} */
-
-.util li div.plus,.minus{
-    width: 16px;
-    height: 16px;
-    float: left;
-    color: black;
-    text-align: center;
-    background-color: #fff;
-    line-height: 12px;
-    font-weight: 600;
-    font-size: 10px;
-}
-.util li div.plus{
-    margin-right: 2px;
-}
-
-
-/* 로고라인 */
-.top2_wrapper{
-    width: 1500px;
-    margin: 0 auto;
-    padding: 40px 0 0px;
-    _background-color: blue;
-}
-
-
-.logo{
-    _background-color: violet;
-    width: 215px;
-    height: 60px;
-    float: left;
-}
-
-
-/* 우측메뉴 */
-
-.menu_wrapper{
-    /* background-color: violet; */
-    float: right;
-}
-
-.menu_wrapper div{
-    float: left;
-}
-
-.menu1 li{
-    float: left;  
-}
-.menu1 li a{
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    color: #464646;
-    margin-right: 55px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.menu2{}
-
-.menu2 img{
-    float: left;
-    background-color: #fff;
+.util_wrapper .util{
+    display: flex;
 }
