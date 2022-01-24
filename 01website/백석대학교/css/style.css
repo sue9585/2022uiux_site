@@ -3,7 +3,7 @@
     background-color: tomato;
 }
 .top_wrapper .width_1200{
-    background-color: turquoise;
+    _background-color: turquoise;
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -23,14 +23,14 @@
     text-align: center;
     padding: 0 20px;
 }
-.top_wrapper .width_1200 ul.top li a:hover, a.active{
+ul.top li a:hover, a.active{
     background-color: red;
-    color: seagreen;
+    color: white;
 }
  
 
 .top{
-    background-color: violet;
+    _background-color: violet;
     display: flex;
 }
 
@@ -40,4 +40,25 @@
 
 .util_wrapper .util{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.util_wrapper .util li{}
+
+.util_wrapper .util li a{
+    display: block;
+    line-height: 40px;
+    padding: 0 5px;
+}
+
+.util li:nth-child(2){
+   
+    _background-color: white;
+    _display: flex;
+    _justify-content: space-between;
+}
+.util li:nth-child(2) div{
+    float: left;
+    background-color: #fff;
+    text-align: center;
 }

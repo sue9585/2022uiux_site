@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <style>
+        body{min-width: 1200px;}
         .topNavWrap a{color:white}
         .topNavWrap{background: blue;}
         .navTop{
@@ -26,6 +27,57 @@
             display: flex;justify-content: center;align-items: center;
             height: 100%;padding:0 10px
         }
+
+        header{height: 160px;}
+        section{
+            height: 1300px; background-color: skyblue;
+            background-image: url(images/dot.png),url(./images/배경01_변형.jpg);
+            background-repeat: repeat,no-repeat;
+            background-position: center;
+            background-size: auto,cover;
+            padding: 70px 0;
+        }
+        .container{width: 1200px; margin: 0 auto;}
+        .titleWrap{
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            height: 140px;
+            align-items: center;
+        }
+        .sectionBannerWrap ul{display: flex;}
+
+        /* section */
+        .contentWrap>ul>li{
+            float: left;
+            width: 25%;
+            height: 225px;
+        }
+        .contentWrap>ul>li:nth-child(2n+1){background-color: steelblue;}
+        .contentWrap>ul>li:nth-child(1){
+            width: 75%;
+            height: 450px;
+        }
+
+        .contentWrap>ul>li:nth-child(2){
+            _width: 75%;
+            height: 450px;
+        }
+
+        .contentWrap>ul>li:nth-child(8){
+            width: 75%;
+            _height: 450px;
+        }
+
+        .contentWrap>ul>li:nth-child(1){background-color: teal;}
+        .contentWrap>ul>li:nth-child(2){background-color: tan;}
+        .contentWrap>ul>li:nth-child(3){background-color: thistle;}
+        .contentWrap>ul>li:nth-child(4){background-color: tomato;}
+        .contentWrap>ul>li:nth-child(5){background-color: turquoise;}
+        .contentWrap>ul>li:nth-child(6){background-color: violet;}
+        .contentWrap>ul>li:nth-child(7){background-color: wheat;}
+        .contentWrap>ul>li:nth-child(8){background-color: white;}
+
     </style>
 </head>
 <body>
@@ -48,5 +100,36 @@
             </div>
         </div>
     </header>
+
+    <section class="section">
+        <div class="container titleWrap">
+            <div class="title">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+            </div>
+            <div class="sectionBannerWrap">
+                <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container contentWrap">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+            </ul>
+        </div>
+
+    </section>
 </body>
 </html>
