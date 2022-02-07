@@ -288,7 +288,7 @@ ul.hot li{
     float: left;
     margin-left: 10px;
 }
-ul.hot li p{text-align: center; color: #fff;}
+ul.hot li p{text-align: center; color: #fff; font-size: 14px;}
 ul.hot li img{
     background-color: #fff;
     border-radius: 50%;
@@ -326,16 +326,29 @@ ul.hot li img{
     margin-left: 25px;
     font-size: 13.5px;
 }
-.notice li div:nth-child(1){}
 
 
-
-
+/* content05 */
 .contentWrap>li:nth-child(5){
     width: 25%;
     height:225px;
     background-color: chartreuse;
 }
+.snsNews{padding: 20px;}
+.snsNews h3{
+    font-weight: bold;
+    color: white;}
+}
+.news img{float: left;
+    width: 115px;
+    height: 80px;
+border: 5px solid #000;
+}
+.news li{float: left;}
+
+
+
+
 .contentWrap>li:nth-child(6){
     width: 25%;
     height: 225px;
