@@ -23,6 +23,11 @@
                 myslider1.goToPrevSlide()
             });
         });
+
+        $(document).ready(function(){
+            $(".slide").bxSlider({
+            });
+        });
     </script>
 
 </head>
@@ -203,16 +208,24 @@
 
 
                 <li>
-                    <ul class="snsNews">
+                    <div class="snsNews">
                         <h3>SNS NEWS</h3>
-                        <li class="news clearfix">
-                            <img class="mini" src="images/content_mini.png" alt="#">
-                            <p>한국 대학교는
-                                2017학년도 신입생
-                                입학식을 3월 2일(목)
-                                본교 종합체육관 ...</p>
-                        </li>
-                    </ul>
+                        <div class="news clearfix">
+                            <img src="images/content_mini.png" alt="">
+                            <p>한국 대학교는<br>
+                                2017학년도 신입생<br>
+                                입학식을 3월 2일(목)<br>
+                                본교 종합체육관 ...
+                            </p>
+                        </div>
+
+                        <div class="sns">
+                            <img src="images/sns_facebook.png" alt="#">
+                            <img src="images/sns_twiter.png" alt="#">
+                            <img src="images/sns_google.png" alt="#">
+                            <img src="images/sns_youtube.png" alt="#">
+                        </div>
+                    </div>
                 </li>
 
 
@@ -220,11 +233,18 @@
                 <li>
                     <div>캠퍼스 투어</div>
                 </li>
-                <li>7</li>
+
+
                 <li>
-                    <ul><li>
-                        <img src="images/slide_sub01.png" alt="">
-                    </li></ul>
+                   video
+                </li>
+
+
+                <li>
+                    <ul class="slide">
+                        <li><img src="images/slide_sub01.png" alt="#"></li>
+                        <li><img src="images/slide_sub02.png" alt="#"></li>
+                </ul>
                 </li>
             </ul>
         

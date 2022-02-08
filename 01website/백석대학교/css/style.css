@@ -235,7 +235,7 @@ ul.slider p a{
 
 
 
-/* 02 */
+/* content02 */
 
 .contentWrap>li:nth-child(2){
     /* width: 35%; */
@@ -335,21 +335,19 @@ ul.hot li img{
     height:225px;
     _background-color: chartreuse;
 }
-.snsNews{padding: 20px;}
+
+/* .snsNews{padding: 10px;} */
 .snsNews h3{
     font-weight: bold;
-    margin-bottom: 20px;
-    }
+    padding: 20px 20px 10px 20px;
 }
+div.news{padding: 20px; _background-color: blue;}
+.news img{float: left;}
+.news p{float: left; font-size: 13.5px; margin-left: 10px;}
+.sns{padding-right: 20px;}
+.sns img{float: right; margin-left: 5px;}
 
 
-/* float 문제있음 */
-.mini{
-background-color: aqua;
-float: left;
-}
-.news p{float: left;
-_background-color: aquamarine;}
 
 
 
@@ -381,5 +379,9 @@ _background-color: aquamarine;}
 .contentWrap>li:nth-child(8){
     width: 75%;
     height: 225px;
-    background-color: darkblue;
+    _background-color: darkblue;
+    
+}
+.bx-wrapper .bx-pager {
+    bottom: 20px;
 }
