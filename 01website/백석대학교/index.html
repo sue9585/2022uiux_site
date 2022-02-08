@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/colorbox.css">
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
     <script>
         $(document).ready(function(){
-            var myslider1 = $(".slider").bxSlider({
+            var myslider1 = $(".slider1").bxSlider({
             });
 
             $(".next").click(function(){
@@ -25,9 +27,18 @@
         });
 
         $(document).ready(function(){
-            $(".slide").bxSlider({
+            $(".slider2").bxSlider({
             });
         });
+
+        $(document).ready(function(){
+            $(".modal").colorbox({rel:"modal"});
+            $(".youtube").colorbox({
+                iframe:true,
+                innerWidth:1000,
+                innerHeight:562.5
+            })
+        })
     </script>
 
 </head>
@@ -130,20 +141,29 @@
             <ul class="container contentWrap clearfix">
                 <li>
                    
-                    <ul class="slider">
-                        <li class="clearfix"><img src="images/slide_main01.png" alt="">
-                                <img class="slideTitle" src="images/text_slideTitle.png" alt="">
-                            <p><a href="#">자세히보기</a></p>
-                        </li>
+                    <div class="sliderWrap1">
+                        <ul class="slider1">
+                            <li class="clearfix"><img src="images/slide_main01.png" alt="">
+                                    <img class="slideTitle" src="images/text_slideTitle.png" alt="">
+                                <p><a href="#">자세히보기</a></p>
+                            </li>
                         
-                        <li><img src="images/slide_main02.png" alt=""></li>
-                        <li><img src="images/slider1.png" alt=""></li>
-                    </ul>
-                    <div class="next">
-                        <img src="images/number01.png" alt="">
-                    </div>
-                    <div class="prev">
-                        <img src="images/number02.png" alt="">
+                            <li><img src="images/slide_main02.png" alt="">
+                                <img class="slideTitle" src="images/text_slideTitle.png" alt="">
+                                <p><a href="#">자세히보기</a></p>
+                            </li>
+
+                            <li><img src="images/slider1.png" alt="">
+                                <img class="slideTitle" src="images/text_slideTitle.png" alt="">
+                                <p><a href="#">자세히보기</a></p>
+                            </li>
+                        </ul>
+                        <div class="next">
+                            <img src="images/number01.png" alt="">
+                        </div>
+                        <div class="prev">
+                            <img src="images/number02.png" alt="">
+                        </div>
                     </div>
                 </li>
 
@@ -236,15 +256,23 @@
 
 
                 <li>
-                   video
+                   <div>
+                       <a href="https://www.youtube.com/watch?v=nMSxlKyn2EM" class="youtube"><img src="images/video.png" alt="#"></a>
+                   </div>
                 </li>
 
 
                 <li>
-                    <ul class="slide">
-                        <li><img src="images/slide_sub01.png" alt="#"></li>
-                        <li><img src="images/slide_sub02.png" alt="#"></li>
-                </ul>
+                    <div class="sliderWrap2">
+                        <ul class="slider2">
+                            <li><img src="images/slide_sub01.png" alt="#">
+                                <img class="slideTitle" src="images/text_subslideTitle.png" alt="">
+                                <p><a href="#">자세히보기</a></p></li>
+                            <li><img src="images/slide_sub02.png" alt="#">
+                                <img class="slideTitle" src="images/text_subslideTitle.png" alt="">
+                                <p><a href="#">자세히보기</a></p></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         
