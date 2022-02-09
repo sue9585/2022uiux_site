@@ -16,6 +16,7 @@
     <script>
         $(document).ready(function(){
             var myslider1 = $(".slider1").bxSlider({
+                controls:false,
             });
 
             $(".next").click(function(){
@@ -28,6 +29,7 @@
 
         $(document).ready(function(){
             $(".slider2").bxSlider({
+                controls:false,
             });
         });
 
@@ -36,8 +38,8 @@
             $(".youtube").colorbox({
                 iframe:true,
                 innerWidth:1000,
-                innerHeight:562.5
-            })
+                innerHeight:562.5,
+            });
         })
     </script>
 
@@ -180,8 +182,8 @@
 
 
                 <li>
+                    <h3>HOT LINK</h3>
                     <ul class="hot clearfix">
-                        <h3>HOT LINK</h3>
                         <li><a href="#"><img src="images/icon_sub01.png" alt="#">
                             <p>국제교류<br>센터</p>
                         </a>
@@ -257,7 +259,7 @@
 
                 <li>
                    <div>
-                       <a href="https://www.youtube.com/watch?v=nMSxlKyn2EM" class="youtube"><img src="images/video.png" alt="#"></a>
+                       <a href="https://www.youtube.com/embed/JACz2_7ZPbA" class="youtube"><img src="images/video.png" alt="#"></a>
                    </div>
                 </li>
 
@@ -279,6 +281,27 @@
         </div>
     </section>
 
+
+    <footer>
+        <div class="footerWrap">
+            <div class="logoWrapper">
+                <div class="logo">logo</div>
+            </div>
+            <div class="footerTextWrap">
+                <ul class="footerMenu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">백석대학교</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용정책</a></li>
+                    <li><a href="#">입점/제휴문의 및 광고</a></li>
+                    <li><a href="#">이메일 무단수집거부</a></li>
+                </ul>
+
+                <p>Lorem ipsum, dolor sit amet consectet Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aperiam.  ur adipisicing elit. Fugiat ipsum magni aperiam error inventore ipsam vel ratione aut quaerat enim, quis libero, ab pariatur quam. Aut doloribus odit sit ipsum!</p>
+                <address>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> &#169;Assumenda, praesentium.</address>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
