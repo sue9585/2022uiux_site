@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+.wrapper{
+    /* 임시높이 */
+    height: 1800px;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header */
+.headerWrap{
+    background-color: rgb(16, 23, 41);
+}
+.utilWrap{
+    width: 980px;
+    margin: 0 auto;
+}
+.utilWrap div.logo{float: left; margin-top: 25px;}
+.utilWrap ul{
+    float: right;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+.utilWrap ul li{
+    float: left;
+
+}
+
+.utilWrap ul li:nth-child(1){}
+
+.utilWrap ul li:nth-child(2){
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+.utilWrap ul li:last-child img{float: left;}
+
+/* search */
+
+.searchWrap{position: relative;z-index: 1;}
+.searchWrap form{display: flex;}
+.searchWrap label{
+    display: block;width: 60px;height: 20px;
+    background-image: url(../images/searchtext.jpg);
+    text-indent: -9999px;
+    position: absolute;
+    align-self: center;
+    left: 15px;
+}
+.searchWrap .inp-search{
+    width: 400px;height: 50px;
+    border-radius:25px;
+    text-indent:90px;
+    border: 3px solid #aaa;
+    font-size: 16px;
+}
+.searchWrap .inp-search:focus{outline: 0 none;}
+.searchWrap .btn-search{
+    width: 40px;height: 40px;
+    position: absolute;
+    align-self: center;
+    right: 15px;
+    border: 0 none;
+    background-image: url(../images/search.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+
+
+/* nav */
+.navWrap{
+    background-color: #029C76;
+    _border-bottom:  3px solid gold;
+    margin-bottom: 60px;
+}
+.navWrap ul.nav{width: 980px; margin: 0 auto;}
+.navWrap ul.nav li{
+    float: left;
+    width: calc( 100% / 6 );
+}
+.navWrap ul.nav li:nth-child(4){
+    position: relative;
+}
+.navWrap ul.nav li:nth-child(4) img{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.navWrap ul.nav li a{
+    display: block;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+}
+.nav li a:hover{background-color:#C9D500;}
+
+
+
+
+.contentWrap{
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* title */
+.contentWrap .mainText{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    _background-color: #029C76;
+}
+.contentWrap .mainText h2{
+    font-size: 68px;
+     margin-bottom: 35px; 
+     _position: relative;}
+.contentWrap .mainText .under{
+    width: 100px; 
+    height: 7px; 
+    background-color: black; 
+    position: absolute;
+    right:130px;
+    top: 90px;
+}
+.contentWrap .mainText p{
+    font-size: 32px; 
+    line-height: 38px; 
+    width: 500px;
+}
+
+/* form */
+
+.formWrap{
+    width: 400px;
+}
+fieldset{
+    border: 0 none;
+    background-color: #fff;
+    padding: 27px;
+}
+legend{
+    position: absolute;
+    left: 0;
+    top: -9999px;
+}
+.field label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.field select{
+    width: 100%;
+}
+.field{margin-bottom: 10px;}
+
+
+/* day */
+.field.day{
+    display: flex;
+    justify-content: space-between;
+}
+
+.field.day > div{
+    width: calc( ( 100% - 15px ) / 2 );
+}
+
+
+/* grade */
+.field.grade{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.field.grade > div{
+    width:calc( ( 100% - 15px ) / 2 );
+}
+
+.field.grade .right{
+    display: flex;justify-content: space-between;
+}
+.field.grade .right > div{
+    width:calc( ( 100% - 15px ) / 2 );
+}
+
+
+/* common  */
+.inp-field{
+    height: 40px;font-size: 16px;text-indent: 8px;
+    color:#333;border-radius: 5px;width: 100%;
+    border: 1px solid #333;
+}
+.inp-field:focus{
+   border: 3px solid white;
+   outline: 3px solid red ;
+}
+.btn{
+    display: block;
+    border: 0 none;
+    background: #EA4F1F;
+    cursor: pointer;
+    font-size: 14px;
+    color:#fff;
+    font-weight: bold;
+}
