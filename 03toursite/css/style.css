@@ -115,11 +115,11 @@
 .contentWrap .mainText{
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: -130px;
     _background-color: #029C76;
 }
 .contentWrap .mainText h2{
-    font-size: 68px;
+    font-size: 60px;
      margin-bottom: 35px; 
      _position: relative;}
 .contentWrap .mainText .under{
@@ -127,14 +127,34 @@
     height: 7px; 
     background-color: black; 
     position: absolute;
-    right:130px;
+    right:165px;
     top: 90px;
 }
 .contentWrap .mainText p{
-    font-size: 32px; 
+    font-size: 28px; 
     line-height: 38px; 
     width: 500px;
 }
+
+/* balloon */
+/* .wrapper{position: relative;} */
+.balloon{
+    position: absolute;
+    top: 55%;
+    right: 30%;
+    transform:translate(-50%,-50%);
+    animation-name:bal01;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center bottom;
+}
+@keyframes bal01{
+    0% {transform: translateY(70px) translateX(200px) rotate(-1deg);}
+    100% {transform: translateY(-120px) translateX(200px) rotate(1deg);}
+}
+
+
 
 /* form */
 
@@ -142,6 +162,7 @@
     width: 400px;
 }
 fieldset{
+    height: 362px;
     border: 0 none;
     background-color: #fff;
     padding: 27px;
@@ -211,3 +232,161 @@ legend{
     color:#fff;
     font-weight: bold;
 }
+
+
+/* active slide */
+.sliderWrap .bx-wrapper {
+    -moz-box-shadow: 0 0 0px none;
+    -webkit-box-shadow: 0 0 0px none;
+    box-shadow: 0 0 0px #ccc;
+    border: 0px none #fff;
+    background: none;
+}
+.sliderWrap{width:400px;margin-left: 150px; position: relative;}
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0px none;
+    -webkit-box-shadow: 0 0 0px none;
+    box-shadow: 0 0 0px #ccc;
+    border: 0px none #fff;
+    background: none;
+}
+.card{position: absolute; top: 20%; right: 10%; left: 10%;}
+
+.slider .card h2{
+    font-size: 2em;color:white;
+    text-shadow: 2px 2px 2px #000;
+    margin-bottom: 50px;
+}
+.slider .card h2:after{
+    content: "";display: block; width: 100px; height: 6px; background-color: #029C76;
+    position: absolute;
+    top: -15px;
+}
+.slider .card p{
+    color: white;
+    margin-bottom: 50px;}
+
+a.btn{
+    padding: 5px 20px;
+    _background-color: turquoise;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 20px;
+    }
+a.btn.primary{ background-color: #029C76;}
+a.btn:hover{background: #EA4F1F;}
+
+.sliderPager{
+    position: absolute;left: -150px; top: 0; background: #0099CB;height: 100%;
+    width: 150px;
+}
+.boxPager{height: 25%;}
+
+.boxPager a img{
+    float: left;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.sliderPager .boxPager a{
+    display: block; width:100%; height: 100%; text-align: center;  line-height: 90px; text-indent: -20px;
+}
+.sliderPager .boxPager a:hover{
+    background-color: #006599; font-weight: bold;
+}
+.sliderPager .boxPager a.active{
+    background:white !important;
+}
+
+/* .firstSlider{
+    width: 500px;
+} */
+
+/* slider1 */
+.sliderWrap1{
+    width: 240px;
+    float: left;
+    position: relative;
+}
+.sliderWrap1 .bx-wrapper {
+    -moz-box-shadow: 0 0 0px none;
+    -webkit-box-shadow: 0 0 0px none;
+    box-shadow: 0 0 0px #ccc;
+    border: 0px none #fff;
+    background: none;
+}
+.slider1 li{position: relative;}
+.slider1 li .card{
+    position: absolute;
+    top: 190px;
+    left: 0;
+    background-color: #152630;
+    width: 233px;
+    height: 50px;
+}
+.slider1 li .card a{
+   display: block;
+   text-align: center;
+   line-height: 50px;
+}
+.slider1 li .card p{
+    text-indent: -50px;
+    float: left;
+    width: 50%;
+    color: white;
+}
+.sliderWrap1 .next{
+    position: absolute;
+    right: 0;
+    bottom: 78px;
+    transform: translateX(-20px);
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+/* slider2 */
+.sliderWrap2{
+    width: 240px;
+    float: left;
+    margin-left: 20px;
+}
+.sliderWrap2 .bx-wrapper {
+    -moz-box-shadow: 0 0 0px none;
+    -webkit-box-shadow: 0 0 0px none;
+    box-shadow: 0 0 0px #ccc;
+    border: 0px none #fff;
+    background: none;}
+
+    .slider2 li{position: relative;}
+    .slider2 li .card{
+        position: absolute;
+        top: 190px;
+        left: 0;
+        background-color: #152630;
+        width: 233px;
+        height: 50px;
+    }
+    .slider2 li .card a{
+       display: block;
+       text-align: center;
+       line-height: 50px;
+    }
+    .slider2 li .card p{
+        text-indent: -50px;
+        float: left;
+        width: 50%;
+        color: white;
+    }
+    .sliderWrap2 .next2{
+        position: absolute;
+       left: 494px;
+        bottom: 78px;
+        transform: translateX(-20px);
+        cursor: pointer;
+    }
+
+    .firstSlider{
+        width: 600px;
+    }
+
+
