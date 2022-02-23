@@ -18,7 +18,7 @@
                 // pager:false,
                 // controls:false,
                 pagerCustom:".boxPager",
-                // auto:true
+                mode: 'vertical',
             });
 
             $(document).ready(function(){
@@ -38,6 +38,32 @@
             });
             $(".next2").click(function(){
                 myslider2.goToNextSlide()
+            });
+        });
+
+        $(document).ready(function(){
+            var myslider3 = $(".slider3").bxSlider({
+                controls:false,
+                pager:false,
+            });
+            $(".next3").click(function(){
+                myslider3.goToNextSlide()
+            });
+            $(".prev3").click(function(){
+                myslider3.goToPrevSlide()
+            });
+        });
+
+        $(document).ready(function(){
+            var myslider4 = $(".slider4").bxSlider({
+                controls:false,
+                pager:false,
+            });
+            $(".next4").click(function(){
+                myslider4.goToNextSlide()
+            });
+            $(".prev4").click(function(){
+                myslider4.goToPrevSlide()
             });
         });
 
@@ -69,7 +95,7 @@
                     <ul class="util clearfix">
                         <li>
                             <div class="searchWrap">
-                                <form action="#" autocomplete="off">
+                                <form action="#"  autocomplete="off">
                                     <label for="search">search</label>
                                     <input type="text" id="search" name="search" placeholder="검색어를 입력하세요" class="inp-search">
                                     <input type="submit" class="btn-search" value="button">
@@ -208,22 +234,22 @@
                 <div class="sliderWrap1">
                     <ul class="slider1">
                         <li>
+                            <a href="#">
                             <img src="images/bgi01.png" alt="">
                             <div class="card">
-                                <a href="#">
                                     <p>프랑스</p>
                                     <p>$ 1,000,000~</p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="#">
                             <img src="images/bgi02.png" alt="">
                             <div class="card">
-                                <a href="#">
                                     <p>영국</p>
                                     <p>$ 1,000,000~</p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                     <div class="next">
@@ -234,22 +260,22 @@
                 <div class="sliderWrap2">
                     <ul class="slider2">
                         <li>
+                            <a href="#">
                             <img src="images/bgi03.png" alt="">
                             <div class="card">
-                                <a href="#">
                                     <p>일본</p>
                                     <p>$ 1,000,000~</p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="#">
                             <img src="images/bgi04.png" alt="">
                             <div class="card">
-                                <a href="#">
                                     <p>대만</p>
                                     <p>$ 1,000,000~</p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                     <div class="next2">
@@ -257,9 +283,94 @@
                     </div>
                 </div>
             </div>
-            
-            
 
+
+            
+            <div class="secondSlider">
+
+                <div class="sliderWrap3">
+                    <ul class="slider3">
+                        <li>
+                            <a href="#">
+                            <img src="images/bgi05.png" alt="">
+                            <div class="card">
+                                    <p>HILLTON HOTEL (PARIS)</p>
+                                    <img src="images/star.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/bgi06.png" alt="">
+                            <div class="card">
+                                    <p>HILLTON HOTEL (VENICE)</p>
+                                    <img src="images/star_gray.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="next3">
+                        <img src="images/number01.png" alt="">
+                    </div>
+                    <div class="prev3">
+                        <img src="images/number02.png" alt="">
+                    </div>
+                </div>
+
+                <div class="sliderWrap4">
+                    <ul class="slider4">
+                        <li>
+                            <a href="#">
+                            <img src="images/bgi05.png" alt="">
+                            <div class="card">
+                                    <p>HILLTON HOTEL (PARIS)</p>
+                                    <img src="images/star.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/bgi06.png" alt="">
+                            <div class="card">
+                                    <p>HILLTON HOTEL (VENICE)</p>
+                                    <img src="images/star_gray.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="next4">
+                        <img src="images/number01.png" alt="">
+                    </div>
+                    <div class="prev4">
+                        <img src="images/number02.png" alt="">
+                    </div>
+                </div>
+                <!-- div -->
+                <div class="weather">
+                    <a href="#">
+                            <img src="images/Group 15.png" alt="">
+                            <div class="textCard">
+                                <p>20°c 구름조금</p>
+                                <p>습도 60% 바람 남남동 2m/s</p>
+                            </div>
+                    </a>
+                </div>
+
+                <div class="comment">
+                    <a href="#">
+                            <img src="images/comment.png" alt="">
+                            <p>“해외여행은 처음이었는데,
+                                하이미디어여행 덕분에 무사히
+                                다녀올 수 있었어요.”</p>
+                            <p>프랑스 파리 자유여행</p>
+                            <div class="textCard">
+                                <p>facebook 여행후기</p>
+                                <p>(임정희님)</p>
+                            </div>
+                    </a>
+                </div>
+
+            </div>
         
         </div>
         

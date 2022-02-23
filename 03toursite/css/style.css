@@ -157,12 +157,13 @@
 
 
 /* form */
+ul.slider{width: 390px;}
 
 .formWrap{
-    width: 400px;
+    /* width: 400px; */
 }
 fieldset{
-    height: 362px;
+    height: 353px;
     border: 0 none;
     background-color: #fff;
     padding: 27px;
@@ -231,25 +232,20 @@ legend{
     font-size: 14px;
     color:#fff;
     font-weight: bold;
-}
+} */
 
 
 /* active slide */
-.sliderWrap .bx-wrapper {
-    -moz-box-shadow: 0 0 0px none;
-    -webkit-box-shadow: 0 0 0px none;
-    box-shadow: 0 0 0px #ccc;
-    border: 0px none #fff;
-    background: none;
-}
-.sliderWrap{width:400px;margin-left: 150px; position: relative;}
 .bx-wrapper {
-    -moz-box-shadow: 0 0 0px none;
-    -webkit-box-shadow: 0 0 0px none;
-    box-shadow: 0 0 0px #ccc;
-    border: 0px none #fff;
-    background: none;
+    -moz-box-shadow: 0;
+    -webkit-box-shadow: 0; 
+    box-shadow: 0;
+    border: 0;
+    background: 0;
 }
+
+.sliderWrap{width:400px;margin-left: 150px; position: relative;}
+
 .card{position: absolute; top: 20%; right: 10%; left: 10%;}
 
 .slider .card h2{
@@ -298,13 +294,15 @@ a.btn:hover{background: #EA4F1F;}
     background:white !important;
 }
 
-/* .firstSlider{
-    width: 500px;
-} */
 
+.firstSlider{
+    height: 240px;
+    margin-bottom: 20px;
+}
 /* slider1 */
 .sliderWrap1{
-    width: 240px;
+    width: 233px;
+    height: 240px;
     float: left;
     position: relative;
 }
@@ -324,17 +322,15 @@ a.btn:hover{background: #EA4F1F;}
     width: 233px;
     height: 50px;
 }
-.slider1 li .card a{
-   display: block;
-   text-align: center;
-   line-height: 50px;
-}
+
 .slider1 li .card p{
-    text-indent: -50px;
+    line-height: 50px;
     float: left;
-    width: 50%;
+    margin-left: 20px;
     color: white;
 }
+.slider1 li .card p:last-child{color: #EA4F1F;}
+
 .sliderWrap1 .next{
     position: absolute;
     right: 0;
@@ -346,7 +342,8 @@ a.btn:hover{background: #EA4F1F;}
 
 /* slider2 */
 .sliderWrap2{
-    width: 240px;
+    width: 233px;
+    height: 240px;
     float: left;
     margin-left: 20px;
 }
@@ -366,27 +363,99 @@ a.btn:hover{background: #EA4F1F;}
         width: 233px;
         height: 50px;
     }
-    .slider2 li .card a{
-       display: block;
-       text-align: center;
-       line-height: 50px;
-    }
+ 
     .slider2 li .card p{
-        text-indent: -50px;
+        line-height: 50px;
         float: left;
-        width: 50%;
+        margin-left: 20px;
         color: white;
     }
+    .slider2 li .card p:last-child{color: #EA4F1F;}
     .sliderWrap2 .next2{
-        position: absolute;
-       left: 494px;
-        bottom: 78px;
-        transform: translateX(-20px);
+        transform: translate(213px, -92px);
         cursor: pointer;
     }
 
-    .firstSlider{
-        width: 600px;
+
+/* secondSlider */
+.secondSlider{
+    width: 980px;
+    height: 240px;
+    background-color: #006599;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+    /* slider3, slider4 */
+    .sliderWrap3, .sliderWrap4{
+        width: 233px;
+        height: 240px;
+        float: left;
     }
+    .sliderWrap3 .bx-wrapper, .sliderWrap4 .bx-wrapper {
+        -moz-box-shadow: 0 0 0px none;
+        -webkit-box-shadow: 0 0 0px none;
+        box-shadow: 0 0 0px #ccc;
+        border: 0px none #fff;
+        background: none;}
+    
+        .slider3 li, .slider4 li{position: relative;}
+        .slider3 li .card, .slider4 li .card{
+            position: absolute;
+            top: 190px;
+            left: 0;
+            background-color: #152630;
+            width: 233px;
+            height: 50px;
+        }
 
+        .slider3 li .card p, .slider4 li .card p{
+            line-height: 30px;
+            float: left;
+            margin-left: 20px;
+            color: white;
+        }
 
+        .slider3 li .card img, .slider4 li .card img{  margin-left: 20px;}
+
+        .sliderWrap3, .sliderWrap4{position: relative;}
+
+        .sliderWrap3 .next3, .sliderWrap4 .next4{
+            position: absolute;
+            top: 20%;
+        }
+        .sliderWrap3 .prev3, .sliderWrap4 .prev4{
+            position: absolute;
+            top: 20%;
+            right: 8px;
+        }
+
+        /* weather, comment */
+       .weather, .comment{
+           width: 233px;
+           height: 240px;
+           position: relative;
+       }
+       .comment>p{
+            font-size: 15px;
+            position: absolute;
+            top: 0px;
+       }
+      
+       
+       .weather .textCard, .comment .textCard{
+           height: 50px;
+           width: 100%;
+           position: absolute;
+           bottom: 0;
+           background-color: #152630;
+           text-align: left;
+           padding: 5px 15px;
+       }
+       .weather .textCard p:first-child, .comment .textCard p:first-child{
+           color: white;
+       }
+       .weather .textCard p:last-child, .comment .textCard p:last-child{
+           color: #ccc;
+           font-size: 15px;
+       }
