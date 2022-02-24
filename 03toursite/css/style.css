@@ -381,7 +381,7 @@ a.btn:hover{background: #EA4F1F;}
 .secondSlider{
     width: 980px;
     height: 240px;
-    background-color: #006599;
+    _background-color: #006599;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -402,15 +402,15 @@ a.btn:hover{background: #EA4F1F;}
         .slider3 li, .slider4 li{position: relative;}
         .slider3 li .card, .slider4 li .card{
             position: absolute;
-            top: 190px;
+            top: 175px;
             left: 0;
             background-color: #152630;
             width: 233px;
-            height: 50px;
+            height: 65px;
         }
 
         .slider3 li .card p, .slider4 li .card p{
-            line-height: 30px;
+            line-height: 40px;
             float: left;
             margin-left: 20px;
             color: white;
@@ -444,13 +444,14 @@ a.btn:hover{background: #EA4F1F;}
       
        
        .weather .textCard, .comment .textCard{
-           height: 50px;
+           height: 65px;
            width: 100%;
            position: absolute;
            bottom: 0;
            background-color: #152630;
            text-align: left;
            padding: 5px 15px;
+           line-height: 25px;
        }
        .weather .textCard p:first-child, .comment .textCard p:first-child{
            color: white;
@@ -459,3 +460,43 @@ a.btn:hover{background: #EA4F1F;}
            color: #ccc;
            font-size: 15px;
        }
+       .comment>a>p{
+           position: absolute;
+           top: 10px;
+           font-size:15px;
+           padding: 10px;
+       }
+       .comment>a>p:nth-of-type(2){
+        top: 90px;
+        color: #576CA3;
+    }
+
+    /* spin */
+    .box1{
+        width: 233px;
+        height: 240px;
+        position: relative;
+        box-shadow: 0 0 10px rgba( 0, 0, 0, 0.3 );
+        _transform: translate(0,0);
+        overflow: hidden;
+    }
+    .box1 img{
+        display: block;
+    }
+
+    .box1:hover{
+        box-shadow: 10px 10px 20px rgba( 0, 0, 0, 0.3 );
+        transform: translate(-20px, -20px);
+        background-color: none;
+    }
+    .box1:hover img{
+        transform: scale(1.3);
+    }
+    .box1 .bg{
+        background-color: rgba( 27, 42, 85, 0.4 );
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
