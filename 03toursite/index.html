@@ -11,6 +11,7 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="https://kit.fontawesome.com/1993935d9b.js" crossorigin="anonymous"></script>
 
     <script>
         $(document).ready(function(){
@@ -19,9 +20,10 @@
                 // controls:false,
                 pagerCustom:".boxPager",
                 mode: 'vertical',
+                touchEnabled:false
             });
 
-            $(document).ready(function(){
+
             var myslider1 = $(".slider1").bxSlider({
                 controls:false,
                 pager:false,
@@ -29,9 +31,7 @@
             $(".next").click(function(){
                 myslider1.goToNextSlide()
             });
-        });
 
-            $(document).ready(function(){
             var myslider2 = $(".slider2").bxSlider({
                 controls:false,
                 pager:false,
@@ -39,9 +39,7 @@
             $(".next2").click(function(){
                 myslider2.goToNextSlide()
             });
-        });
 
-        $(document).ready(function(){
             var myslider3 = $(".slider3").bxSlider({
                 controls:false,
                 pager:false,
@@ -52,9 +50,7 @@
             $(".prev3").click(function(){
                 myslider3.goToPrevSlide()
             });
-        });
 
-        $(document).ready(function(){
             var myslider4 = $(".slider4").bxSlider({
                 controls:false,
                 pager:false,
@@ -68,7 +64,7 @@
         });
 
 
-        });
+        
     </script>
 
 <style>
@@ -78,30 +74,31 @@
 <body>
     <img src="images/content1.png" alt="" class="balloon">
     <div class="wrapper">
- 
-    <!-- header -->
-    <header>
+
+        <!-- header -->
+        <header>
 
             <div class="headerWrap">
                 <div class="utilWrap clearfix">
                     <div class="logo">
                         <a href="#">
                             <h1>
-                            <img src="images/logo.png" alt="모두투어">
+                                <img src="images/logo.png" alt="모두투어">
                             </h1>
                         </a>
                     </div>
-            
+
                     <ul class="util clearfix">
                         <li>
                             <div class="searchWrap">
-                                <form action="#"  autocomplete="off">
+                                <form action="#" autocomplete="off">
                                     <label for="search">search</label>
-                                    <input type="text" id="search" name="search" placeholder="검색어를 입력하세요" class="inp-search">
+                                    <input type="text" id="search" name="search" placeholder="검색어를 입력하세요"
+                                        class="inp-search">
                                     <input type="submit" class="btn-search" value="button">
                                 </form>
                             </div>
-            
+
                         </li>
                         <li>+82 02 1234 5678</li>
                         <li class="clearfix">
@@ -124,23 +121,23 @@
                     <li><a href="#">커뮤니티</a></li>
                 </ul>
             </nav>
-            
+
         </header>
-        
+
         <div class="contentWrap">
-        
+
             <div class="mainText">
-        
+
                 <h2>TRAVEL GO</h2>
                 <div class="under"></div>
                 <p>지금, 여행이 떠나고 싶다면?<br>
                     모두와 여행을 떠나자!</p>
             </div>
-        
-            
+
+
             <div class="sliderWrap">
                 <ul class="slider">
-                    <li>
+                    <li class="sLI1">
                         <div class="formWrap">
                             <form action="#">
                                 <fieldset>
@@ -149,10 +146,10 @@
                                         <label for="go">가고싶은 나라를 선택하세요</label>
                                         <select name="goSelect" id="go" class="inp-field">
                                             <option value="">선택하세요</option>
-                                            <option value="제주도">제주도</option>
-                                            <option value="베이징">베이징</option>
-                                            <option value="도코">도코</option>
-                                            <option value="하와이">하와이</option>
+                                            <option value="미국">미국</option>
+                                            <option value="호주">호주</option>
+                                            <option value="일본">일본</option>
+                                            <option value="중국">중국</option>
                                         </select>
                                     </div>
                                     <div class="field day">
@@ -177,11 +174,13 @@
                                         <div class="right">
                                             <div class="adult">
                                                 <label for="age1">성인</label>
-                                                <input type="number" name="age1" id="age1" class="inp-field" placeholder="1">
+                                                <input type="number" name="age1" id="age1" class="inp-field"
+                                                    placeholder="1">
                                             </div>
                                             <div class="childe">
                                                 <label for="age2">아이</label>
-                                                <input type="number" name="age2" id="age2" class="inp-field" placeholder="1">
+                                                <input type="number" name="age2" id="age2" class="inp-field"
+                                                    placeholder="1">
                                             </div>
                                         </div>
                                     </div>
@@ -192,8 +191,8 @@
                     </li>
 
 
-                    <li>
-                        <img src="images/slide-images01.png" alt="">
+                    <li class="sLI1">
+                        <img src="images/slide-images01.png" alt="" width="300">
                         <div class="card">
                             <h2>Hotel reservation</h2>
                             <p>Lorem ipsum dolor sitadipisicing elit.<br> Necessitatibus, at!</p>
@@ -202,7 +201,7 @@
                     </li>
 
 
-                    <li>
+                    <li class="sLI1">
                         <img src="images/slide-images02.png" alt="">
                         <div class="card">
                             <h2>Rental cars</h2>
@@ -211,8 +210,9 @@
                         </div>
                     </li>
 
-                    <li>
-                        <img src="images/slide-images03.png" alt=""> <div class="card">
+                    <li class="sLI1">
+                        <img src="images/slide-images03.png" alt="">
+                        <div class="card">
                             <h2>Vacation spot.</h2>
                             <p>Loremmet consectetur adipisicing elit.<br> Necessitatibus, at!</p>
                             <a href="" class="btn primary">바로가기</a>
@@ -222,21 +222,33 @@
 
                 <div class="sliderPager">
                     <div class="boxPager">
-                        <a href="#" data-slide-index="0"><img src="images/side_icon01.png" alt="">공항예약</a>
-                        <a href="#" data-slide-index="1"><img src="images/side_icon02.png" alt="">호텔예약</a>
-                        <a href="#" data-slide-index="2"><img src="images/side_icon03.png" alt="">렌트카</a>
-                        <a href="#" data-slide-index="3"><img src="images/side_icon04.png" alt="">휴양지</a>
+                        <a href="#" data-slide-index="0">
+                            <i class="fa-solid fa-plane"></i>
+                            <p>공항예약</p>
+                        </a>
+                        <a href="#" data-slide-index="1">
+                            <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                            <p>호텔예약</p>
+                        </a>
+                        <a href="#" data-slide-index="2">
+                            <i class="fa-solid fa-car"></i>
+                            <p>렌트카</p>
+                        </a>
+                        <a href="#" data-slide-index="3">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>휴양지</p>
+                        </a>
                     </div>
                 </div>
             </div>
-        
+
             <div class="firstSlider clearfix">
                 <div class="sliderWrap1">
                     <ul class="slider1">
                         <li>
                             <a href="#">
-                            <img src="images/bgi01.png" alt="">
-                            <div class="card">
+                                <img src="images/bgi01.png" alt="">
+                                <div class="card">
                                     <p>프랑스</p>
                                     <p>$ 1,000,000~</p>
                                 </div>
@@ -244,8 +256,8 @@
                         </li>
                         <li>
                             <a href="#">
-                            <img src="images/bgi02.png" alt="">
-                            <div class="card">
+                                <img src="images/bgi02.png" alt="">
+                                <div class="card">
                                     <p>영국</p>
                                     <p>$ 1,000,000~</p>
                                 </div>
@@ -261,8 +273,8 @@
                     <ul class="slider2">
                         <li>
                             <a href="#">
-                            <img src="images/bgi03.png" alt="">
-                            <div class="card">
+                                <img src="images/bgi03.png" alt="">
+                                <div class="card">
                                     <p>일본</p>
                                     <p>$ 1,000,000~</p>
                                 </div>
@@ -270,8 +282,8 @@
                         </li>
                         <li>
                             <a href="#">
-                            <img src="images/bgi04.png" alt="">
-                            <div class="card">
+                                <img src="images/bgi04.png" alt="">
+                                <div class="card">
                                     <p>대만</p>
                                     <p>$ 1,000,000~</p>
                                 </div>
@@ -285,15 +297,15 @@
             </div>
 
 
-            
+
             <div class="secondSlider">
 
                 <div class="sliderWrap3">
                     <ul class="slider3">
                         <li>
                             <a href="#">
-                            <img src="images/bgi05.png" alt="">
-                            <div class="card">
+                                <img src="images/bgi05.png" alt="">
+                                <div class="card">
                                     <p>HILLTON HOTEL (PARIS)</p>
                                     <img src="images/star.png" alt="">
                                 </div>
@@ -301,8 +313,8 @@
                         </li>
                         <li>
                             <a href="#">
-                            <img src="images/bgi06.png" alt="">
-                            <div class="card">
+                                <img src="images/bgi06.png" alt="">
+                                <div class="card">
                                     <p>HILLTON HOTEL (VENICE)</p>
                                     <img src="images/star_gray.png" alt="">
                                 </div>
@@ -321,8 +333,8 @@
                     <ul class="slider4">
                         <li>
                             <a href="#">
-                            <img src="images/bgi07.png" alt="">
-                            <div class="card">
+                                <img src="images/bgi07.png" alt="">
+                                <div class="card">
                                     <p>HILLTON HOTEL (PARIS)</p>
                                     <img src="images/star.png" alt="">
                                 </div>
@@ -330,8 +342,8 @@
                         </li>
                         <li>
                             <a href="#">
-                            <img src="images/bgi08.png" alt="">
-                            <div class="card">
+                                <img src="images/bgi08.png" alt="">
+                                <div class="card">
                                     <p>HILLTON HOTEL (VENICE)</p>
                                     <img src="images/star_gray.png" alt="">
                                 </div>
@@ -348,43 +360,124 @@
                 <!-- div -->
                 <div class="weather">
                     <a href="#">
-                            <img src="images/Group 15.png" alt="">
-                            <div class="textCard">
-                                <p>20°c 구름조금</p>
-                                <p>습도 60% 바람 남남동 2m/s</p>
-                            </div>
+                        <img src="images/Group 15.png" alt="">
+                        <div class="textCard">
+                            <p>20°c 구름조금</p>
+                            <p>습도 60% 바람 남남동 2m/s</p>
+                        </div>
                     </a>
                 </div>
 
                 <div class="comment">
                     <a href="#">
-                            <img src="images/comment.png" alt="">
-                            <p>“해외여행은 처음이었는데,
-                                하이미디어여행 덕분에 무사히
-                                다녀올 수 있었어요.”</p>
-                            <p>프랑스 파리 자유여행</p>
-                            <div class="textCard">
-                                <p>facebook 여행후기</p>
-                                <p>(임정희님)</p>
-                            </div>
+                        <img src="images/comment.png" alt="">
+                        <p>“해외여행은 처음이었는데,
+                            하이미디어여행 덕분에 무사히
+                            다녀올 수 있었어요.”</p>
+                        <p>프랑스 파리 자유여행</p>
+                        <div class="textCard">
+                            <p>facebook 여행후기</p>
+                            <p>(임정희님)</p>
+                        </div>
                     </a>
                 </div>
 
             </div>
 
             <!-- spin -->
-            <div class="box1">
-                <div>
-                    <img src="images/Group 13.png" alt="#">
+            <div class="boxWrap">
+                <div class="box1">
+                    <div>
+                        <img src="images/Group 13.png" alt="#">
+                    </div>
+                    <div class="bg"></div>
+
+                    <div class="textWrap">
+                        <div><img src="images/spin_icon04.png" alt=""></div>
+                        <h3>여행정보</h3>
+                    </div>
+                    <p> 다양한 나라의 명소와 맛집 등<br>
+                        상세한 정보를 볼 수 있습니다. </p>
+
+                    <div class="stickWrap">
+                        <div class="stick"></div>
+                        <div class="stick"></div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div>
+                        <img src="images/Group 12.png" alt="#">
+                    </div>
+                    <div class="bg"></div>
+
+                    <div class="textWrap">
+                        <div><img src="images/spin_icon03.png" alt=""></div>
+                        <h3>여행정보</h3>
+                    </div>
+                    <p> 다양한 나라의 명소와 맛집 등<br>
+                        상세한 정보를 볼 수 있습니다. </p>
+
+                    <div class="stickWrap">
+                        <div class="stick"></div>
+                        <div class="stick"></div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div>
+                        <img src="images/Group 11.png" alt="#">
+                    </div>
+                    <div class="bg"></div>
+
+                    <div class="textWrap">
+                        <div><img src="images/spin_icon02.png" alt=""></div>
+                        <h3>여행정보</h3>
+                    </div>
+                    <p> 다양한 나라의 명소와 맛집 등<br>
+                        상세한 정보를 볼 수 있습니다. </p>
+
+                    <div class="stickWrap">
+                        <div class="stick"></div>
+                        <div class="stick"></div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div>
+                        <img src="images/Group 10.png" alt="#">
+                    </div>
+                    <div class="bg"></div>
+
+                    <div class="textWrap">
+                        <div><img src="images/spin_icon01.png" alt=""></div>
+                        <h3>여행정보</h3>
+                    </div>
+                    <p> 다양한 나라의 명소와 맛집 등<br>
+                        상세한 정보를 볼 수 있습니다. </p>
+
+                    <div class="stickWrap">
+                        <div class="stick"></div>
+                        <div class="stick"></div>
+                    </div>
                 </div>
 
-                <div class="bg"></div>
-                <div class="bar"></div>
+
+
             </div>
-        
-        </div>
-        
+
         </div>
 
+        <!-- footer -->
+        <footer>
+            <ul class="footerMenu clearfix">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">광고 및 제휴문의</a></li>
+            </ul>
+            <p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호:123-45-478910 대표이사:홍길동 대표번호:02-1234-5678</p>
+            <p>COPYRIGHT©2014 HIMEDIA TOUR.ALL RIGHTS RESERVED</p>
+        </footer>
+
+    </div>
 </body>
 </html>

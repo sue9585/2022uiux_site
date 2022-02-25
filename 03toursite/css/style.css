@@ -163,10 +163,12 @@ ul.slider{width: 390px;}
     /* width: 400px; */
 }
 fieldset{
-    height: 353px;
+    padding: 25px 10px 10px 10px;
+    height: 365px;
     border: 0 none;
     background-color: #fff;
-    padding: 27px;
+    padding-right: 32px;
+    padding-left: 19px;
 }
 legend{
     position: absolute;
@@ -240,12 +242,18 @@ legend{
     -moz-box-shadow: 0;
     -webkit-box-shadow: 0; 
     box-shadow: 0;
-    border: 0;
+    border: none;
     background: 0;
 }
 
-.sliderWrap{width:400px;margin-left: 150px; position: relative;}
-
+.sliderWrap{
+    width: 384px;
+    margin-left: 106px;
+    position: relative;
+    height: 400px;
+    background: #0f0;
+}
+.sliderWrap .sLI1{height: 400px;}
 .card{position: absolute; top: 20%; right: 10%; left: 10%;}
 
 .slider .card h2{
@@ -273,15 +281,19 @@ a.btn.primary{ background-color: #029C76;}
 a.btn:hover{background: #EA4F1F;}
 
 .sliderPager{
-    position: absolute;left: -150px; top: 0; background: #0099CB;height: 100%;
-    width: 150px;
+    position: absolute;
+    left: -103px;
+    top: 0;
+    background: #0099CB;
+    height: 100%;
+    width: 110px;
 }
 .boxPager{height: 25%;}
 
-.boxPager a img{
-    float: left;
-    padding-top: 30px;
-    padding-left: 10px;
+.boxPager a{width: 100%; display: flex;}
+.boxPager a i{
+}
+.boxPager a p{
 }
 
 .sliderPager .boxPager a{
@@ -334,7 +346,7 @@ a.btn:hover{background: #EA4F1F;}
 .sliderWrap1 .next{
     position: absolute;
     right: 0;
-    bottom: 78px;
+    bottom: 20px;
     transform: translateX(-20px);
     cursor: pointer;
     /* background-color: red; */
@@ -385,6 +397,7 @@ a.btn:hover{background: #EA4F1F;}
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin-bottom: 20px;
 }
     /* slider3, slider4 */
     .sliderWrap3, .sliderWrap4{
@@ -427,7 +440,7 @@ a.btn:hover{background: #EA4F1F;}
         .sliderWrap3 .prev3, .sliderWrap4 .prev4{
             position: absolute;
             top: 20%;
-            right: 8px;
+            right: 0px;
         }
 
         /* weather, comment */
@@ -448,7 +461,7 @@ a.btn:hover{background: #EA4F1F;}
            width: 100%;
            position: absolute;
            bottom: 0;
-           background-color: #152630;
+           background-color: #029C76;
            text-align: left;
            padding: 5px 15px;
            line-height: 25px;
@@ -472,13 +485,28 @@ a.btn:hover{background: #EA4F1F;}
     }
 
     /* spin */
+    .boxWrap .textWrap{
+        position: absolute;
+        top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .boxWrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
     .box1{
         width: 233px;
         height: 240px;
         position: relative;
         box-shadow: 0 0 10px rgba( 0, 0, 0, 0.3 );
-        _transform: translate(0,0);
         overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
     .box1 img{
         display: block;
@@ -486,11 +514,10 @@ a.btn:hover{background: #EA4F1F;}
 
     .box1:hover{
         box-shadow: 10px 10px 20px rgba( 0, 0, 0, 0.3 );
-        transform: translate(-20px, -20px);
-        background-color: none;
+        transform: translate(-7px, -7px);
     }
-    .box1:hover img{
-        transform: scale(1.3);
+    .box1:hover>div>img{
+        transform: scale(1.5);
     }
     .box1 .bg{
         background-color: rgba( 27, 42, 85, 0.4 );
@@ -499,4 +526,67 @@ a.btn:hover{background: #EA4F1F;}
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .box1:hover .bg{
+        opacity: 0;
+    }
+
+    .box1 p{
+        font-size: 14px;
+        position: absolute;
+        top: 70px;
+        color: white;
+    }
+    .stickWrap{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left:50%;
+        top:65%;
+        border: 4px solid #fff;
+        border-radius: 25px;
+        transform:translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease 0.5s;
+    }
+    .box1 .stickWrap:hover{
+        transform: rotate(45deg);
+    }
+    .box1:hover .stickWrap{
+        transform:translate(-50%,-50%) rotate(180deg);
+    }
+    .stickWrap div{
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        background: #fff;
+        border-radius: 2px;
+    }
+    .stickWrap div:last-child{
+        width: 4px;
+        height: 20px;
+    }
+
+
+    /* footer */
+    footer{
+        width: 980px;
+        margin: 0 auto;
+        _background-color: #fff;
+        padding: 45px 0;
+    }
+    .footerMenu{
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .footerMenu li{
+        margin-right: 15px;
+        float: left;
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 12px;
+        color: #707070;
     }
